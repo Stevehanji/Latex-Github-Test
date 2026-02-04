@@ -11,6 +11,7 @@
 \usepackage{hyperref}
 \usepackage{fancyhdr}
 
+% Title
 \title{
     \LARGE Trường Đại học Tôn Đức Thắng\\
     \Large Khoa Toán - Thống Kê\\[2em]
@@ -26,6 +27,9 @@
 
 }
 \date{\LARGE TP.HCM, ngày 4 tháng 2 năm 2026}
+
+% new Theorem
+
 
 \begin{document}
 
@@ -46,5 +50,52 @@ Lời Cam kết:
 \newpage
 
 % --------- Trang 3 ----------------
+\section{Introduction}
+Let $(X,d)$ be a metric space. A mapping $T$ : $X \rightarrow X$ is said to be a $\varphi$-weak contraction if there exists a map $\varphi$ : $[0, \inf)$ with $\varphi(0) = 0$ and $\varphi(t) > 0$ all $t > 0$ such that
+
+\begin{equation}
+d(Tx, Ty) \leqslant d(x,y) - \varphi(d(x,y))
+\end{equation}
+for all $x, y \in X$.
+
+Also two mappings $T, S$ : $X \rightarrow X$ are called generalized $\varphi$-weak contractions if there exits a map $\varphi$ : $[0, \inf) \rightarrow [0,\inf)$
+
+\begin{equation}
+d(Tx, Sy) \leqslant N(x,y) - \varphi(N(x,y))
+\end{equation}
+for all $x,y \in X$, where
+\begin{equation}
+    N(x, y) := \max\left\{d(x,y), d(x,Tx), d(y,Sy), \frac{1}{2}\bigl[d(x,Sy) + d(y, Tx)\bigr]\right\}
+\end{equation}
+The concept of the $\varphi$-weak contraction was defined by Alber and Guerre-Delabriere in 1997
+
+% --------- Trang 4 ----------------
+
+
+% --------- Trang 5 ----------------
+
+
+% --------- Trang 6 ----------------
+
+
+% --------- Trang 7 ----------------
+
+
+% --------- Trang 8 ----------------
+\newpage
+\renewcommand{\refname}{References}
+\begin{thebibliography}{99}
+    \bibitem{TaiLieu1} Ya.I. Alber, S. Guerre-Delabriere, Principles of weakly contractive maps in Hilbert spaces, in: I. Gohberg, Yu. Lyubich (Eds.), New Results in Operator Theory, in: Advances and Appl., vol. 98, Birkhäuser, Basel, 1997, pp. 7–22.
+    \bibitem{TaiLieu2} Q. Zhang, Y. Song, Fixed point theory for generalized $\varphi$-weak contractions, Appl. Math. Lett. 22 (2009) 75–78.
+    \bibitem{TaiLieu3} B.E. Rhoades, Some theorems on weakly contractive maps, Nonlinear Anal. 47 (2001) 2683–2693.
+    \bibitem{TaiLieu4} S. Banach, Sur les opérations dans les ensembles abstraits et leur application aux équations intégrales, Fund. Math. 3 (1922) 133–181 (in French).
+    \bibitem{TaiLieu5} D.W. Boyd, J.S.W. Wong, On nonlinear contractions, Proc. Amer. Math. Soc. 20 (1969) 458–464.
+    \bibitem{TaiLieu6} S. Reich, Some fixed point problems, Atti. Accad. Naz. Lincei, Rend. Cl. Sci. Fis. Mat. Nat. (8) 57 (3–4) (1974) 194–198. (1975).
+    \bibitem{TaiLieu7} B.DjafariRouhani,SirousMoradi,Commonfixedpointofgeneralized $\varphi$-weakcontractivemulti-valuedandsinglevaluedmappings,FixedPointTheory
+Appl. (2010) doi:10.1155/2010/708984.
+    \bibitem{TaiLieu8} G. Jungck, B.E. Rhoades, Fixed point for set valued functions without continuity, Indian J. Pure Appl. Math. 29 (3) (1998) 227–238.
+    \bibitem{TaiLieu9} A. Djoudi, F. Merghadi, Commonfixedpoint theoremsfor mapsunderacontractive condition of integral type, J. Math. Anal. Appl. 341 (2008) 953–960.
+\end{thebibliography}
+
 
 \end{document}
