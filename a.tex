@@ -1,0 +1,39 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{vietnam}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{thmtools}
+\usepackage{xcolor}
+\usepackage{nameref}
+\usepackage{hyperref}
+\usepackage{fancyhdr}%header + footer
+\pagestyle{fancy}%header
+\fancyhead[L]{Nam xiu đẹp chai}
+\fancyfoot[C]{\thepage}
+\hypersetup{
+	colorlinks=true,
+	citecolor=red,
+	linktoc=all
+}
+\title{Buổi 5}
+\author{Nhóm 3}
+\begin{document}
+	\maketitle
+	\renewcommand{\thesection}{\arabic{section}/}
+	\section{Danh sách vắng}
+	-Phạm Ngọc Khánh Linh\\
+	\section{Tài liệu tham khảo}
+	Theo tài liệu tham khảo của Cần \cite{nyc1}
+	\renewcommand{\refname}{Danh sách tài liệu}
+	\newpage
+	\begin{thebibliography}{99}
+		\bibitem{n}Tuan, N. H., Baleanu, D., Thach, T. N., O’Regan, D.,  Can, N. H. (2020). Final value problem for nonlinear time fractional reaction–diffusion equation with discrete data. Journal of Computational and Applied Mathematics, 376, 112883.
+		
+		\bibitem{nyc1}Karapinar, E., Binh, H. D., Luc, N. H., \& Can, N. H. (2021). On continuity of the fractional derivative of the time-fractional semilinear pseudo-parabolic systems.\textit{ Advances in Difference Equations, \textit{2021}}(1), 70.
+		
+	\end{thebibliography}
+	\footnote{}tôi tên
+\end{document}
