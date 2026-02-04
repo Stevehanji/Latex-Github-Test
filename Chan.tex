@@ -26,10 +26,11 @@
     \Large MSSV: C2500010\\
 
 }
+\author{}
 \date{\LARGE TP.HCM, ngày 4 tháng 2 năm 2026}
 
 % new Theorem
-
+\newtheorem{theorem}{Theorem}[section]
 
 \begin{document}
 
@@ -49,39 +50,73 @@ Lời Cam kết:
 \end{itemize}
 \newpage
 
-% --------- Trang 3 ----------------
+% --------- 1 Introduction ----------------
 \section{Introduction}
-Let $(X,d)$ be a metric space. A mapping $T$ : $X \rightarrow X$ is said to be a $\varphi$-weak contraction if there exists a map $\varphi$ : $[0, \inf)$ with $\varphi(0) = 0$ and $\varphi(t) > 0$ all $t > 0$ such that
+Let $(X,d)$ be a metric space. A mapping $T$ : $X \rightarrow X$ is said to be a $\varphi$-weak contraction if there exists a map $\varphi$ : $[0, \infty)$ with $\varphi(0) = 0$ and $\varphi(t) > 0$ all $t > 0$ such that
 
-\begin{equation}
+\begin{equation} \label{eq1-1}
 d(Tx, Ty) \leqslant d(x,y) - \varphi(d(x,y))
 \end{equation}
 for all $x, y \in X$.
 
-Also two mappings $T, S$ : $X \rightarrow X$ are called generalized $\varphi$-weak contractions if there exits a map $\varphi$ : $[0, \inf) \rightarrow [0,\inf)$
+Also two mappings $T, S$ : $X \rightarrow X$ are called generalized $\varphi$-weak contractions if there exits a map $\varphi$ : $[0, \infty) \rightarrow [0,\infty)$
 
-\begin{equation}
-d(Tx, Sy) \leqslant N(x,y) - \varphi(N(x,y))
+\begin{equation} \label{eq1-2}
+    d(Tx, Sy) \leqslant N(x,y) - \varphi(N(x,y))
 \end{equation}
 for all $x,y \in X$, where
-\begin{equation}
+\begin{equation} \label{eq1-3}
     N(x, y) := \max\left\{d(x,y), d(x,Tx), d(y,Sy), \frac{1}{2}\bigl[d(x,Sy) + d(y, Tx)\bigr]\right\}
 \end{equation}
-The concept of the $\varphi$-weak contraction was defined by Alber and Guerre-Delabriere in 1997
+The concept of the $\varphi$-weak contraction was defined by Alber and Guerre-Delabriere \cite{TaiLieu1} in 1997, and the generalized $\varphi$-weak
+contraction was defined by Zhang and Song \cite{TaiLieu2} in 2009. Rhoades \cite[Theorem~2]{TaiLieu3} proved the following fixed point theorem 
+for $\varphi$-weak contraction single-valued mappings, giving another generalization of the Banach contraction principle \cite{TaiLieu4}
 
-% --------- Trang 4 ----------------
+% ----- Theorem 1.1 -----
+\begin{theorem} \label{Theorem1-1}
+    Let $(X,d)$ be a complete metric space, and let $T$ : $X \rightarrow X$ be a mapping such that
+    \begin{equation} \label{eq1-4}
+        d(Tx, Sy) \leqslant d(x,y) - \varphi(d(x,y))
+    \end{equation}
+    for every $x,y \in X$ (i.e. it is $\varphi$-weakly contractive), where $\varphi$ : $[0, +\infty) \rightarrow [0, +\infty)$ is a continuous and nondecreasing function
+    with $\varphi(0) = 0$ and $\varphi(t) > 0$ for all $t > 0$.Then $T$ has a unique fixed point.
+\end{theorem}
+
+On choosing $\psi(t) = t - \varphi(t)$, $\varphi$-weak contractions become mappings of Boyd and Wong type \cite{TaiLieu5}, and on defining
+$k(t) = \frac{1 - \varphi(t)}{t}$ for $t > 0$ and $k(0) = 0$, then $\varphi$-weak contractions become mappings of Reich type \cite{TaiLieu6}.
+
+In 2009 Zhang and Song \cite{TaiLieu2} proved the following theoremon the existence of acommon fixed point for two single-valued
+generalized $\varphi$-weak contraction mappings.
+
+% ----- Theorem 1.2 -----
+\begin{theorem}\label{Theorem1-2}
+    Let $(X,d)$ be a complete metric space, and let $T$, $S$ : $X \rightarrow X$ be two mappings such that for all $x,y \in X$
+    \begin{equation} \label{eq1-5}
+        d(Tx, Sy) \leqslant N(x,y) - \varphi(N(x,y))
+    \end{equation}
+    (i.e. they are generalized $\varphi$-weakcontractions), where $\varphi$ : $[0,+\infty) \rightarrow [0,+\infty)$ is a l.s.c. function with $\varphi(0) = 0$ and $\varphi(t) > 0$
+    for all $t > 0$. Then there exists a unique point $x \in X$ such that $x = Tx = Sx$.
+\end{theorem}
+
+\small Recently Rouhani and Moradi \cite{TaiLieu7} extended Theorems \ref{Theorem1-1} and \ref{eq1-2} to multivalued mappings.
+
+In Section 3, we extend Theorem \ref{Theorem1-1} by assuming $\varphi$ to be only l.s.c., and extend Theorem \ref{Theorem1-2}
+
+% --------- 2 Preliminaries ----------------
 
 
-% --------- Trang 5 ----------------
+% --------- 3 Mainresults ----------------
 
 
-% --------- Trang 6 ----------------
+% --------- 4 Conclusion and future directions ----------------
 
 
-% --------- Trang 7 ----------------
+% --------- 5 Acknowledgements ----------------
+\section{Acknowledgements}
+The authors sincerely thank the referees for their careful reading of this work and valuable suggestions.
 
 
-% --------- Trang 8 ----------------
+% --------- 6 References ----------------
 \newpage
 \renewcommand{\refname}{References}
 \begin{thebibliography}{99}
